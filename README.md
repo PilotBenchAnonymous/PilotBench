@@ -8,7 +8,7 @@ The sections below explain how these files map to the paper and provide a unifie
 
 ## Relation to the Paper
 - Tool Registry (Tools) → Paper “Benchmark Setup” → “Tool Registry”, consistent with “Benchmark Construction > Tool Library Generation”. Error models and dependencies are detailed in the paper and appendices.
-- Tasks and Reference Workflows (Tasks + Workflows) → Paper “Benchmark Setup > Benchmark Data Organization” → “Task Specifications” and “Reference Workflows”. The four prompt variants correspond to “Workflow Prompt Generation” and “MDP-BASED OPTIMAL WORKFLOW GENERATION”.
+- Tasks and Reference Workflows (Tasks + Workflows) → Paper “Benchmark Setup > Benchmark Data Organization” → “Task Specifications” and “Reference Workflows”. The four prompt variants correspond to “Workflow Prompt Generation” and “MDP-Based Optimal Workflow Generation”.
 
 ## Files and Contents
 - `tool_registry.json`
