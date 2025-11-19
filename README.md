@@ -14,8 +14,8 @@ The real APIs integrated into this benchmark were carefully selected from the [p
 ### Real API Integration
 We expand the benchmark by incorporating real-world APIs alongside the existing simulated tools:
 
-- **Real API Tasks**: Tasks that interact with actual public APIs to test agents' capabilities in real-world scenarios
-- **Real API Tools**: Integrated a curated selection of public APIs from the [public-apis repository](https://github.com/public-apis/public-apis)
+- **Real API Tasks**: Tasks that interact with actual public APIs to test agents' capabilities in real-world scenarios. The tasks are given in `task_library_realAPI.json`
+- **Real API Tools**: Integrated a curated selection of public APIs from the [public-apis repository](https://github.com/public-apis/public-apis). The tools are given in `tool_registry_realAPI.json`.
 
 The real APIs were carefully selected to provide diverse functionality while maintaining reliability and accessibility for benchmark evaluation.
 
@@ -35,8 +35,7 @@ These new names better reflect the actual functionality and purpose of each task
 
 ## Quick Filename Mapping
 - Tools → `tool_registry.json` (Paper "Tool Registry").
-- Tasks (without workflows) → `tasks/task_specs_v3_{difficulty}.json` (Paper "Task Specifications").
-- Tasks (with four reference workflows) → `tasks/task_specs_v3_{difficulty}_with_workflows.json` (Paper "Reference Workflows", "Workflow Prompt Generation", "MDP-BASED OPTIMAL WORKFLOW GENERATION").
+- Tasks (with four reference workflows) → `simulated_tasks_enhanced/task_library_enhanced_v3_{difficulty}_with_workflows.json` (Paper "Reference Workflows", "Workflow Prompt Generation", "MDP-BASED OPTIMAL WORKFLOW GENERATION").
 - `biased` variants → supplemental analysis dataset versions (for robustness/sampling comparisons).epository contains the supplementary materials submitted with the paper:
 - Tasks (task specifications and reference workflows): a set of JSON files under the `tasks/` directory.
 - Tools (tool registry / probabilistic tool behavior): the `tool_registry.json` at the repository root.
