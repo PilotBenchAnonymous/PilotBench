@@ -1,6 +1,6 @@
 # PILOT-Bench Supplementary (Tasks & Tools)
 
-T## Real API Integration
+## Real API
 
 ### Real API Selection Criteria
 The real APIs integrated into this benchmark were carefully selected from the [public-apis repository](https://github.com/public-apis/public-apis) based on the following criteria:
@@ -12,22 +12,12 @@ The real APIs integrated into this benchmark were carefully selected from the [p
 - **Rate Limits**: Reasonable rate limits suitable for benchmark evaluation
 
 ### Real API Integration
-This version significantly expands the benchmark by incorporating real-world APIs alongside the existing simulated tools:
+We expand the benchmark by incorporating real-world APIs alongside the existing simulated tools:
 
-- **Real API Tasks**: Added tasks that interact with actual public APIs to test agents' capabilities in real-world scenarios
+- **Real API Tasks**: Tasks that interact with actual public APIs to test agents' capabilities in real-world scenarios
 - **Real API Tools**: Integrated a curated selection of public APIs from the [public-apis repository](https://github.com/public-apis/public-apis)
 
 The real APIs were carefully selected to provide diverse functionality while maintaining reliability and accessibility for benchmark evaluation.
-
-## Quick Filename Mapping
-- Tools → `tool_registry.json` (Paper "Tool Registry").
-- Tasks (without workflows) → `tasks/task_specs_v3_{difficulty}.json` (Paper "Task Specifications").
-- Tasks (with four reference workflows) → `tasks/task_specs_v3_{difficulty}_with_workflows.json` (Paper "Reference Workflows", "Workflow Prompt Generation", "MDP-BASED OPTIMAL WORKFLOW GENERATION").
-- `biased` variants → supplemental analysis dataset versions (for robustness/sampling comparisons).epository contains the supplementary materials submitted with the paper:
-- Tasks (task specifications and reference workflows): a set of JSON files under the `tasks/` directory.
-- Tools (tool registry / probabilistic tool behavior): the `tool_registry.json` at the repository root.
-
-The sections below explain how these files map to the paper and provide a unified naming scheme for easier review and reproduction.
 
 ## Version Changes
 
@@ -42,6 +32,16 @@ The task categories have been renamed for better clarity and semantic meaning:
 5. `complex_workflow` → `advanced_processing`
 
 These new names better reflect the actual functionality and purpose of each task category, making the benchmark more intuitive for researchers and practitioners.
+
+## Quick Filename Mapping
+- Tools → `tool_registry.json` (Paper "Tool Registry").
+- Tasks (without workflows) → `tasks/task_specs_v3_{difficulty}.json` (Paper "Task Specifications").
+- Tasks (with four reference workflows) → `tasks/task_specs_v3_{difficulty}_with_workflows.json` (Paper "Reference Workflows", "Workflow Prompt Generation", "MDP-BASED OPTIMAL WORKFLOW GENERATION").
+- `biased` variants → supplemental analysis dataset versions (for robustness/sampling comparisons).epository contains the supplementary materials submitted with the paper:
+- Tasks (task specifications and reference workflows): a set of JSON files under the `tasks/` directory.
+- Tools (tool registry / probabilistic tool behavior): the `tool_registry.json` at the repository root.
+
+The sections below explain how these files map to the paper and provide a unified naming scheme for easier review and reproduction.
 
 
 
