@@ -1,10 +1,49 @@
 # PILOT-Bench Supplementary (Tasks & Tools)
 
-This repository contains the supplementary materials submitted with the paper:
+T## Real API Integration
+
+### Real API Selection Criteria
+The real APIs integrated into this benchmark were carefully selected from the [public-apis repository](https://github.com/public-apis/public-apis) based on the following criteria:
+
+- **Reliability**: APIs with high uptime and stable service
+- **Accessibility**: Free or freemium APIs that don't require complex authentication
+- **Diversity**: Coverage of different domains and functionality types
+- **Documentation**: Well-documented APIs with clear parameter specifications
+- **Rate Limits**: Reasonable rate limits suitable for benchmark evaluation
+
+### Real API Integration
+This version significantly expands the benchmark by incorporating real-world APIs alongside the existing simulated tools:
+
+- **Real API Tasks**: Added tasks that interact with actual public APIs to test agents' capabilities in real-world scenarios
+- **Real API Tools**: Integrated a curated selection of public APIs from the [public-apis repository](https://github.com/public-apis/public-apis)
+
+The real APIs were carefully selected to provide diverse functionality while maintaining reliability and accessibility for benchmark evaluation.
+
+## Quick Filename Mapping
+- Tools → `tool_registry.json` (Paper "Tool Registry").
+- Tasks (without workflows) → `tasks/task_specs_v3_{difficulty}.json` (Paper "Task Specifications").
+- Tasks (with four reference workflows) → `tasks/task_specs_v3_{difficulty}_with_workflows.json` (Paper "Reference Workflows", "Workflow Prompt Generation", "MDP-BASED OPTIMAL WORKFLOW GENERATION").
+- `biased` variants → supplemental analysis dataset versions (for robustness/sampling comparisons).epository contains the supplementary materials submitted with the paper:
 - Tasks (task specifications and reference workflows): a set of JSON files under the `tasks/` directory.
 - Tools (tool registry / probabilistic tool behavior): the `tool_registry.json` at the repository root.
 
 The sections below explain how these files map to the paper and provide a unified naming scheme for easier review and reproduction.
+
+## Version Changes
+
+This version introduces several key improvements compared to the previous version:
+
+### Task Category Renaming
+The task categories have been renamed for better clarity and semantic meaning:
+1. `single_tool_task` → `content_analysis`
+2. `two_step_task` → `batch_processing`  
+3. `multi_step_processing` → `data_multistep_processing`
+4. `network_integration` → `api_data_retrieval`
+5. `complex_workflow` → `advanced_processing`
+
+These new names better reflect the actual functionality and purpose of each task category, making the benchmark more intuitive for researchers and practitioners.
+
+
 
 ## Relation to the Paper
 - Tool Registry (Tools) → Paper “Benchmark Setup” → “Tool Registry”, consistent with “Benchmark Construction > Tool Library Generation”. Error models and dependencies are detailed in the paper and appendices.
